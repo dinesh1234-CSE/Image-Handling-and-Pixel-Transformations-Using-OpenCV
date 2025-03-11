@@ -268,9 +268,8 @@ plt.show()
 
 
 
-  
-  ![image](https://github.com/user-attachments/assets/7d7eb796-b724-4e18-9653-4cab76a03cfd)
 
+![Screenshot 2025-03-11 082700](https://github.com/user-attachments/assets/564d076b-ed47-4903-8afe-52dc989b0800)
 
 
 
