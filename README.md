@@ -315,7 +315,8 @@ plt.show()
 
 
 
-![image](https://github.com/user-attachments/assets/cddbf2ac-93ab-48c0-ab97-62c738eb6c2e)
+![Screenshot 2025-03-11 082425](https://github.com/user-attachments/assets/6db4d2a2-8b21-43e5-976a-8f199eebc8cc)
+
 
 
 
@@ -326,7 +327,8 @@ plt.show()
 
 
 
-![image](https://github.com/user-attachments/assets/ab8d3dbb-e6ee-4c37-be33-1c25fe7a9a6d)
+![Screenshot 2025-03-11 082414](https://github.com/user-attachments/assets/e5a79c38-d998-4ced-82d2-d750d465572d)
+
 
 
 
@@ -335,7 +337,7 @@ plt.show()
 
 
 
-![image](https://github.com/user-attachments/assets/e608b227-a9a8-4fd6-a896-79e27782659e)
+![Screenshot 2025-03-11 082402](https://github.com/user-attachments/assets/2e2034ed-8cc3-4855-a8cb-87632e161c80)
 
 
 
