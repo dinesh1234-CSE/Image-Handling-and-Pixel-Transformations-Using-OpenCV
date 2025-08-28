@@ -31,8 +31,8 @@ Display the original, lower contrast, and higher contrast images.
 Split the image (boy.jpg) into B, G, R components and display the channels
 
 ## Program Developed By:
-- **Name:** VIGNESH.V
-- **Register Number:** 212223230241
+- **Name:** ALLAM SESANK
+- **Register Number:**  212223240006
 
   ### Ex. No. 01
 
@@ -53,19 +53,20 @@ img.shape
 #### 3. Display the image using matplotlib imshow().
 ```
 img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_RGB2GRAY)
-plt.imshow(img_gray,cmap='grey')
+plt.imshow(img_gray,cmap='gray')
 plt.show()
 ```
 
 #### 4. Save the image as a PNG file using OpenCV imwrite().
-```python
-# YOUR CODE HERE
+```
+img=cv2.imread('Eagle_in_Flight.jpg')
+cv2.imwrite('Eagle.png',img)
 ```
 
 #### 5. Read the saved image above as a color image using cv2.cvtColor().
 ```
-img=cv2.imread('Eagle_in_Flight.jpg')
-cv2.imwrite('Eagle.png',img)
+img=cv2.imread('Eagle.png')
+img_rgb = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 ```
 
 #### 6. Display the Colour image using matplotlib imshow() & Print the image width, height & channel.
@@ -111,7 +112,6 @@ text = cv2.putText(img_rgb, "Apollo 11 Saturn V Launch, July 16, 1969", (300, 70
 plt.imshow(text, cmap='gray')  
 plt.title("New image")
 plt.show()  
-
 ```
 
 #### 12. Draw a magenta rectangle that encompasses the launch tower and the rocket.
@@ -200,6 +200,7 @@ plt.subplot(1,3,2), plt.imshow(s, cmap='gray'), plt.title("Saturation Channel"),
 plt.subplot(1,3,3), plt.imshow(v, cmap='gray'), plt.title("Value Channel"), plt.axis("off")
 plt.show()
 ```
+
 #### 23. Merged the H, S, V, displays along with original image.
 ```
 merged_hsv = cv2.cvtColor(cv2.merge([h, s, v]), cv2.COLOR_HSV2RGB)
@@ -212,134 +213,76 @@ plt.show()
 ```
 
 ## Output:
-**i)** Read and Display an Image.
-1.Read 'Eagle_in_Flight.jpg' as grayscale and display:
+- ### *i)* Read and Display an Image.  
+   1.Read 'Eagle_in_Flight.jpg' as grayscale and display:
 
+![image](https://github.com/user-attachments/assets/8fbee7a1-6682-4ebc-bf5d-0e99168fe414)
 
-![Screenshot 2025-03-09 154231](https://github.com/user-attachments/assets/31689cac-7a79-459c-9940-0adc26441782)
+  2.Save image as PNG and display:
 
+![image](https://github.com/user-attachments/assets/f3c7b81e-a1d3-47d8-8bce-41506c62019f)
 
+  3.Cropped image:
 
+![image](https://github.com/user-attachments/assets/6844ce30-4221-4a0f-baa4-ffb871f70048)
 
-
-
- 2.Save image as PNG and display:
-
-
-
-
- 
-  ![image](https://github.com/user-attachments/assets/f17ba18b-7549-45e8-80a4-8568b81b718b)
-
-
-
-
-
-
-  
-  3.Cropped image
-
-
-
-
-
-  
-  ![image](https://github.com/user-attachments/assets/ebd99581-276e-47f9-af37-c99423e803bc)
-
-
-
-
-
-  
   4.Resize and flip Horizontally:
-
-
-
-
   
-  ![image](https://github.com/user-attachments/assets/92cb7462-a2fd-4ba3-bf89-02785b629e1d)
+![image](https://github.com/user-attachments/assets/52f120d2-1e32-4f45-8ca6-30b834ada0d1)
 
+  5.Read 'Apollo-11-launch.jpg' and  Display the final annotated image:
 
+![image](https://github.com/user-attachments/assets/f9f8af66-0811-4ef7-93dd-26fd825533b7)
 
-
-
-  
-  5.Read 'Apollo-11-launch.jpg' and Display the final annotated image:
-
-
-
-
-![Screenshot 2025-03-11 082700](https://github.com/user-attachments/assets/564d076b-ed47-4903-8afe-52dc989b0800)
-
-
-
-
-  
-*ii)** Adjust Image Brightness.
-
-
+- ### *ii)* Adjust Image Brightness.
 
 1.Create brighter and darker images and display:
 
+![image](https://github.com/user-attachments/assets/2fbdf2e6-53b6-4789-b1f7-1c04a2a58af0)
+
+![image](https://github.com/user-attachments/assets/84944e6d-1f8a-4db8-8f53-d3d2bbbd6e1c)
+
+![image](https://github.com/user-attachments/assets/217de5b6-93f7-4495-95a6-549a1a182976)
 
 
 
-![image](https://github.com/user-attachments/assets/f34966ee-21f9-4441-bdd4-36c3da71b89d)
+- ### *iii)* Modify Image Contrast.  
+1. Modify contrast using scaling factors 1.1 and 1.2:
+
+![image](https://github.com/user-attachments/assets/4139717b-33aa-43b6-9bc2-5783780a1eb5)
+
+![image](https://github.com/user-attachments/assets/c96ec7ac-58aa-4729-9431-fdf31838a5f7)
+
+![image](https://github.com/user-attachments/assets/e19b467e-0ab4-44af-a235-921af100fe3d)
 
 
+- ### *iv)* Generate Third Image Using Bitwise Operations.
 
-  **iii)** Modify Image Contrast.
+1.Split 'Boy.jpg' into B, G, R components and display:
 
+![image](https://github.com/user-attachments/assets/30364c56-0f70-4d05-b1fe-e504bbc830f4)
 
-1.Modify contrast using scaling factors 1.1 and 1.2
+![image](https://github.com/user-attachments/assets/fc200792-bf96-4e55-bb12-d9c07df40092)
 
- 
-![image](https://github.com/user-attachments/assets/998698a5-0d84-4f73-96d6-68421a529951)
- 
-
- **iv)** Generate Third Image Using Bitwise Operations.
-
-
- 
- 1.Split 'Boy.jpg' into B, G, R components and display: 
-
-
-
-![image](https://github.com/user-attachments/assets/54d59ef6-9800-4ff4-af13-f15fd602d334)
-
-
-
+![image](https://github.com/user-attachments/assets/86c9a27b-a0ac-4cdd-924b-bd3173a3cee9)
 
 2.Merge the R, G, B channels and display:
 
-
-
-![Screenshot 2025-03-11 082425](https://github.com/user-attachments/assets/6db4d2a2-8b21-43e5-976a-8f199eebc8cc)
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/09d5507f-ae48-4ab3-bc7d-9b7466ce7e81)
 
 3.Split the image into H, S, V components and display:
 
+![image](https://github.com/user-attachments/assets/5cfbee49-3082-44da-ab63-fbe813392013)
 
+![image](https://github.com/user-attachments/assets/74412dc1-b2a1-4261-af9c-0bec8f2165d6)
 
-
-![Screenshot 2025-03-11 082414](https://github.com/user-attachments/assets/e5a79c38-d998-4ced-82d2-d750d465572d)
-
-
-
+![image](https://github.com/user-attachments/assets/c0612cd0-1dcc-4c4f-b9f7-501b18468184)
 
 
 4.Merge the H, S, V channels and display:
 
-
-
-![Screenshot 2025-03-11 082402](https://github.com/user-attachments/assets/2e2034ed-8cc3-4855-a8cb-87632e161c80)
-
+![image](https://github.com/user-attachments/assets/3c8fa07d-31ff-4b14-87c1-061ffef0447e)
 
 
 ## Result:
 Thus, the images were read, displayed, brightness and contrast adjustments were made, and bitwise operations were performed successfully using the Python program.
-
